@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS-GRID : Kanban Board</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <!--  NAV BAR  -->
+  <nav>
+    <div class="logo">
+      <a href="#"><i class="fab fa-affiliatetheme"></i></a>
+    </div>
+    <div class="nav__items">
+      <ul>
+        <li class="nav__item">
+          <a href="#" class="nav__item--active">
+            <i class="fas fa-columns"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <i class="far fa-calendar"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <i class="far fa-chart-bar"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <i class="fas fa-sliders-h"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--  MAIN SECTION  -->
+  <main>
+    <div class="main__header">
+      <h2>Your Board</h2>
+      <div>
+        <i class="fas fa-search"></i>
+        <i class="far fa-bell"></i>
+      </div>
+    </div>
+    <div class="main__kanban__info">
+      <img src="https://source.unsplash.com/a5dEsN-I30I" height="40" width="40">
+      <img src="https://source.unsplash.com/YTg9850sIsc" height="40" width="40">
+      <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="40" width="40">
+      <img src="https://source.unsplash.com/kbjIOft9Dbg" height="40" width="40">
+      <button> <i class="fas fa-user-plus"></i> Invite People</button>
+      <button> <i class="fas fa-plus"></i> Create</button>
+    </div>
+    <!--   KANBAN BOARD STARTS   -->
+    <div class="main__kanban">
+      <!--     1st board   -->
+      <div class="board">
+        <div class="board__header board__style">
+          <i class="fas fa-dot-circle"></i>
+          <span>Design Sprint</span>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="board__conatiner">
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#311f7d"></li>
+              <li style="--section-color:#df8395"></li>
+            </ul>
+            <p>Step 1 - UX Map</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>3</span>
+              <img src="https://source.unsplash.com/a5dEsN-I30I" height="30" width="30">
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+              <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="30" width="30s">
+            </div>
+          </div>
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#fe9734"></li>
+              <li style="--section-color:#df8395"></li>
+              <li style="--section-color:#ffd169"></li>
+            </ul>
+            <p>Step 2 - Desiging the extracted maps as wireframe and presenting the entire wireframe design to the customer</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>5</span>
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+              <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="30" width="30s">
+            </div>
+          </div>
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#311f7d"></li>
+            </ul>
+            <p>Step 3 - Understand</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>12</span>
+              <img src="https://source.unsplash.com/kbjIOft9Dbg" height="30" width="30">
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+              <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="30" width="30s">
+            </div>
+          </div>
+        </div>
+        <button class="add__card"> <i class="fas fa-plus"></i> Add Card</button>
+      </div>
+      <!--    2nd Board    -->
+      <div class="board">
+        <div class="board__header board__style">
+          <i class="fas fa-dot-circle"></i>
+          <span>Project</span>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="board__conatiner">
+          <div class="board__boxes board__style" draggable="true">
+            <div class="image-wrapper">
+              <img src="https://source.unsplash.com/BMO_9hKVPbU" height="100" width="100%">
+            </div>
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#311f7d"></li>
+              <li style="--section-color:#fe9734"></li>
+            </ul>
+            <p>Construction Website</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>13</span>
+              <img src="https://source.unsplash.com/kbjIOft9Dbg" height="30" width="30">
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+              <img src="https://source.unsplash.com/a5dEsN-I30I" height="30" width="30s">
+            </div>
+          </div>
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#fe9734"></li>
+              <li style="--section-color:#df8395"></li>
+            </ul>
+            <p>Foodie Food App</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>3</span>
+              <img src="https://source.unsplash.com/kbjIOft9Dbg" height="30" width="30">
+              <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="30" width="30s">
+            </div>
+          </div>
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#df8395"></li>
+            </ul>
+            <p>Create CV Builder</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>2</span>
+              <img src="https://source.unsplash.com/a5dEsN-I30I" height="30" width="30">
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+              <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="30" width="30s">
+            </div>
+          </div>
+        </div>
+        <button class="add__card"> <i class="fas fa-plus"></i> Add Card</button>
+      </div>
+      <!--   3rd Board     -->
+      <div class="board">
+        <div class="board__header board__style">
+          <i class="fas fa-dot-circle"></i>
+          <span>UX Research</span>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="board__conatiner">
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#ffd169"></li>
+              <li style="--section-color:#df8395"></li>
+              <li style="--section-color:#311f7d"></li>
+            </ul>
+            <p>User Persona</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>7</span>
+              <img src="https://source.unsplash.com/a5dEsN-I30I" height="30" width="30">
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+              <img src="https://source.unsplash.com/-W8Bv-IsNWg" height="30" width="30s">
+            </div>
+          </div>
+          <div class="board__boxes board__style" draggable="true">
+            <div class="image-wrapper">
+              <img src="https://source.unsplash.com/Hbush4QGqPg" height="100" width="100%">
+            </div>
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#311f7d"></li>
+              <li style="--section-color:#fe9734"></li>
+            </ul>
+            <p>UX Rules</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>3</span>
+              <img src="https://source.unsplash.com/YTg9850sIsc" height="30" width="30">
+            </div>
+          </div>
+          <div class="board__boxes board__style" draggable="true">
+            <ul class="board__boxes__sections">
+              <li style="--section-color:#df8395"></li>
+              <li style="--section-color:#ffd169"></li>
+            </ul>
+            <p>UX Test - Get through all the scenarios for the projects and make sure it meets a11y principle .</p>
+            <div class="board__boxes__info">
+              <i class="fas fa-paperclip"></i>
+              <span>5</span>
+              <img src="https://source.unsplash.com/kbjIOft9Dbg" height="30" width="30">
+              <img src="https://source.unsplash.com/a5dEsN-I30I" height="30" width="30s">
+            </div>
+          </div>
+        </div>
+        <button class="add__card"> <i class="fas fa-plus"></i> Add Card</button>
+      </div>
+    </div>
+  </main>
+  <!--  ASIDE  -->
+  <aside>
+    <div class="breadcrumb">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="user">
+      <div class="user__image">
+        <img src="https://source.unsplash.com/kbjIOft9Dbg" height="60" width="60">
+      </div>
+      <div class="user__info">
+        <p>Ashley Allow</p>
+        <p>Visual Designer</p>
+      </div>
+      <div class="user__count">
+        34
+      </div>
+    </div>
+    <div class="daily__info">
+      <div class="progress">
+        <p style="--percentage: 75">Progress</p>
+        <div style="--percentage: 75"></div>
+      </div>
+      <div class="calendar">
+        <div class="calendar__header">
+          <span>July, 2020</span>
+          <span>
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+          </span>
+          <span>Two weeks</span>
+        </div>
+        <div class="calendar__body">
+          <span class="week__name">Sun</span>
+          <span class="week__name">Mon</span>
+          <span class="week__name">Tue</span>
+          <span class="week__name">Web</span>
+          <span class="week__name">Thu</span>
+          <span class="week__name">Fri</span>
+          <span class="week__name">Sat</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span class="start" style="--value:10">10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span class="end" style="--value:16">16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span>22</span>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+        </div>
+      </div>
+      <div class="marketing__banner">
+        <svg id="marketing" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 907.34204 669">
+          <circle cx="72.5" cy="72.5" r="72.5" fill="#ff6584" />
+          <ellipse cx="431" cy="637.5" rx="359" ry="31.5" fill="#3f3d56" />
+          <path d="M697.829,731.5h-3c0-100.72754,18.1377-195.39648,51.07324-266.56543C779.00671,393.39746,823.19617,354,870.329,354v3C775.21179,357,697.829,525,697.829,731.5Z" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M935.329,266c0,23.4721-10.29745,53.5-23,53.5s-23-30.0279-23-53.5,10.29745-31.5,23-31.5S935.329,242.5279,935.329,266Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M1025.59391,366.13083c-23.21656,3.45416-54.43291-2.31226-56.30222-14.87652s26.31629-27.1685,49.53284-30.62266,32.67243,5.54978,34.54174,18.114S1048.81046,362.67666,1025.59391,366.13083Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M922.70676,455.42437c-8.30249-21.95469-9.29212-53.68374,2.58924-58.17685s32.13449,19.95117,40.437,41.90586,1.51034,33.106-10.371,37.5991S931.00924,477.37905,922.70676,455.42437Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <circle cx="776" cy="240" r="29" fill="#513e9d" />
+          <path d="M530.829,742.5h-3c0-206.5-77.3833-374.5-172.5-374.5v-3c47.1333,0,91.32227,39.39746,124.42725,110.93457C512.6908,547.10352,530.829,641.77246,530.829,742.5Z" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M290.329,277c0,23.4721,10.29745,53.5,23,53.5s23-30.0279,23-53.5-10.29745-31.5-23-31.5S290.329,253.5279,290.329,277Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M200.06405,377.13083c23.21656,3.45416,54.43291-2.31226,56.30222-14.87652s-26.31629-27.1685-49.53284-30.62266-32.67243,5.54978-34.54174,18.114S176.8475,373.67666,200.06405,377.13083Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M302.9512,466.42437c8.30249-21.95469,9.29212-53.68374-2.58924-58.17685s-32.13449,19.95117-40.437,41.90586-1.51034,33.106,10.371,37.5991S294.64872,488.37905,302.9512,466.42437Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <circle cx="157" cy="251" r="29" fill="#513e9d" />
+          <path d="M330.329,736.5v-58s23,21,0,63" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M331.088,734.99581l16.299-55.66276s16.17181,26.61715-17.70407,60.46128" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M734.329,723.5v-58s23,21,0,63" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M735.088,721.99581l16.299-55.66276s16.17181,26.61715-17.70407,60.46128" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M648.329,726.5v-58s-23,21,0,63" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M647.57,724.99581l-16.299-55.66276s-16.17181,26.61715,17.70407,60.46128" transform="translate(-146.32898 -115.5)" fill="#3f3d56" />
+          <path d="M428.1666,73h.00009a42.93618,42.93618,0,0,1,42.93618,42.93618v42.051a0,0,0,0,1,0,0H385.23041a0,0,0,0,1,0,0v-42.051A42.93618,42.93618,0,0,1,428.1666,73Z" fill="#2f2e41" />
+          <path d="M616.98921,278.35623c-15.74847,11.18756-36.72758,15.50239-59.314,17.70566,15.56151-12.62658,9.46341-26.57238,0-40.723l34.526-3.54113C593.19885,264.64369,603.16066,272.5626,616.98921,278.35623Z" transform="translate(-146.32898 -115.5)" fill="#ffb8b8" />
+          <path d="M624.07147,412.034,522.26392,397.86943c8.25254-15.54733,13.79437-30.56735,11.84946-44.13131a62.57619,62.57619,0,0,1,.256-20.43131l.64784-3.45519a54.75385,54.75385,0,0,1,7.584-18.69708c4.08886-6.588,2.6781-16.48694.90948-26.60133l23.90264-3.54113c13.18922,6.6996,27.99632,2.23584,43.37886-6.197l28.32906,2.65585C637.2018,327.95358,632.9819,374.25609,624.07147,412.034Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M709.05864,715.686l-19.47623,3.54113L563.87222,500.56226,514.29638,719.22717l-17.70566-.88528c-.38753-123.91953-5.95924-259.97722,24.00887-312.82111,11.24337-26.68147,28.4462-52.2303,22.02584-78.474,25.21717,7.34876,50.60022,6.82355,76.13434-.88528-1.19857,31.48979-.06289,60.99332,4.42642,87.643Z" transform="translate(-146.32898 -115.5)" fill="#513e9d" />
+          <path d="M703.51209,775h0a19.3311,19.3311,0,0,1-18.66641-14.30552L683.119,754.281a12.695,12.695,0,0,1-.363-4.66485l3.2853-30.389c6.26463-7.76622,15.37369-9.63869,28.32906-3.54113l8.00587,35.75956A19.33109,19.33109,0,0,1,703.51209,775Z" transform="translate(-146.32898 -115.5)" fill="#2f2e41" />
+          <path d="M507.86455,775h0a19.33109,19.33109,0,0,1-18.66641-14.30552l-1.7267-6.41344a12.695,12.695,0,0,1-.363-4.66485l3.2853-30.389c6.26463-7.76622,15.37369-9.63869,28.32906-3.54113l8.00587,35.75956A19.33109,19.33109,0,0,1,507.86455,775Z" transform="translate(-146.32898 -115.5)" fill="#2f2e41" />
+          <circle cx="423.74023" cy="121.24792" r="29.21434" fill="#ffb8b8" />
+          <circle cx="401.16551" cy="217.30113" r="2.65585" fill="#e6e6e6" />
+          <circle cx="468.44702" cy="217.30113" r="2.65585" fill="#e6e6e6" />
+          <polygon points="442.774 117.264 396.739 116.449 396.739 86.279 452.512 86.279 442.774 117.264" fill="#2f2e41" />
+          <path d="M607.69373,272.60189H587.33222c7.52534-17.97994,6.86235-36.94579,0-56.65812h20.36151Z" transform="translate(-146.32898 -115.5)" fill="#2f2e41" />
+          <path d="M632.9243,440.363l-12.06166,14.14125a15.01588,15.01588,0,0,1-24.33127-2.07025l0,0a15.01588,15.01588,0,0,1,6.99164-21.476l21.43376-9.18589L650.63,385.47547l-14.16453-62.85509,24.78793-7.96755,14.16452,79.67547Z" transform="translate(-146.32898 -115.5)" fill="#ffb8b8" />
+          <path d="M539.96958,446.98578,552.03124,461.127a15.01588,15.01588,0,0,0,24.33127-2.07026l0,0a15.01589,15.01589,0,0,0-6.99164-21.476l-21.43376-9.18589-25.67321-36.29661,14.16453-62.85509-24.78792-7.96755L497.476,400.95106Z" transform="translate(-146.32898 -115.5)" fill="#ffb8b8" />
+          <path d="M664.79449,318.194a40.62422,40.62422,0,0,0-30.01955,11.96818l-8.85283-53.117,10.70767-.12553a21.34513,21.34513,0,0,1,19.50343,14.71307Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M508.09939,324.81672a40.62423,40.62423,0,0,1,30.01955,11.96819c10.24581-15.54044,11.731-33.68118,8.85283-53.117l-10.70767-.12553a21.34514,21.34514,0,0,0-19.50343,14.71307Z" transform="translate(-146.32898 -115.5)" fill="#e6e6e6" />
+          <path d="M614.33336,330.58792h.97519l5.87883-54.585a1.07372,1.07372,0,0,0-1.0677-1.18787h-4.71257a1.07479,1.07479,0,0,0-1.07375,1.07376Z" transform="translate(-146.32898 -115.5)" fill="#513e9d" />
+          <path d="M546.16656,333.24377h.983l5.87883-49.964a.84173.84173,0,0,0-.836-.93975h-5.18375a.84309.84309,0,0,0-.84206.84206Z" transform="translate(-146.32898 -115.5)" fill="#513e9d" />
+        </svg>
+        <p>Use our new features with 20% discount</p>
+        <button>Create</button>
+      </div>
+    </div>
+  </aside>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1000px;
+    background-color: var(--black);
+    border: 4px solid var(--green);
+    box-shadow: inset 0 0 0 2px #e74c3c;
+    animation: loading 2s ease infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 3.5rem;
+      height: 3.5rem;
+      border: 8px solid var(--green);
+      box-shadow: inset 0 0 0 0px var(--box-shadow);
+    }
+    50% {
+      width: 4rem;
+      height: 4rem;
+      border: 0px solid var(--green);
+      box-shadow: inset 0 0 0 8px var(--box-shadow);
+    }
+    100% {
+      width: 5rem;
+      height: 5rem;
+      border: 0px solid var(--green);
+      box-shadow: inset 0 0 0 0px var(--box-shadow);
+    }
+  }

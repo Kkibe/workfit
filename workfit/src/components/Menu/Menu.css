@@ -1,0 +1,135 @@
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+}
+
+.box{
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+}
+
+
+.box .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: fill;
+}
+
+.box .image .button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    z-index: 5;
+    color: var(--green);
+    cursor: pointer;
+
+}
+
+.box .image .icon{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .image .icon:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+.box .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+
+
+
+.box .content .stars{
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+.box .content .stars .star{
+    color: var(--green);
+}
+.box .content .stars .duration{
+    padding: 4px 8px;
+    border-radius: 30px;
+    background: var(--light-color);
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    font-size: 1.2rem;
+}
+
+.box .content h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    cursor: pointer;
+} 
+
+.box .content h3:hover{
+    text-decoration: underline;
+}
+
+.box .content p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+    margin: 5px 5px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.hash:hover{
+    background: var(--light-color);
+    color: #fff;
+}
+
+.box .content .views{
+    color: var(--green);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
